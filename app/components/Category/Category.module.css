@@ -1,0 +1,66 @@
+.folderContainer {
+    display: grid;
+}
+
+.folder {
+    border: none;
+    background: none;
+    outline: none;
+    display: grid;
+    grid-template-columns: 20px 20px 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    justify-items: start;
+    cursor: pointer;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: .3s ease-in-out;
+}
+
+.children {
+    overflow: hidden;
+    padding-left: 25px;
+}
+
+.folder:hover{
+
+}
+
+.active {
+    color: var(--grey);
+}
+
+.icon {
+    fill: var(--dark);
+    transition: .3s ease-in-out ;
+}
+
+.active .icon {
+    transform: rotate(90deg);
+    fill: var(--grey);
+}
+
+.folderIcon {
+    fill: var(--dark);
+}
+
+.active .folderIcon {
+    animation: animateFolder .3s ease-in-out forwards;
+}
+
+@keyframes animateFolder {
+    0% {
+        fill: var(--dark);
+    }
+    50% {
+        fill: var(--grey);
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        fill: var(--grey);
+    }
+}

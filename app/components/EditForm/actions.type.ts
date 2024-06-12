@@ -1,0 +1,1 @@
+export type ActionsType = 'add' | 'rename' | 'remove'

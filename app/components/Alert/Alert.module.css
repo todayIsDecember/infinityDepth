@@ -1,0 +1,18 @@
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    color: var(--white);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.error {
+    background: rgba(120, 0, 0, 0.5);
+}
+
+.success {
+    background: rgba(53, 143, 128, 0.5);
+}
